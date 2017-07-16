@@ -1,0 +1,22 @@
+{
+  "name": "uploader-go-bucket",
+  "version": "1.0.0",
+  "description": "Upload local files, then sent file local from s3 bucket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRCardoso/uploader-go-bucket.git"
+  },
+  "keywords": [
+    "uploader-bucket"
+  ],
+  "author": "MRCardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MRCardoso/uploader-go-bucket/issues"
+  },
+  "homepage": "https://github.com/MRCardoso/uploader-go-bucket#readme"
+}
