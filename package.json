@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MRCardoso/uploader-go-bucket/issues"
   },
-  "homepage": "https://github.com/MRCardoso/uploader-go-bucket#readme"
+  "homepage": "https://github.com/MRCardoso/uploader-go-bucket#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
 }
