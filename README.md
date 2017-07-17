@@ -15,7 +15,7 @@ let uploader = require('uploader-go-bucket'),
 
 **Note:** if you use windows, install the program 'gitBash' that emulate the command line, is you use mac ou linux "YOU IS HAPPY"
 
-Download this project by .zip, then unzip, and run in command line:
+Download this project by .zip, then unzip, and run in command line, in this steps:
 
 #### Go to the directory wirh unziped files
 ```
