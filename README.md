@@ -13,17 +13,19 @@ let uploader = require('uploader-go-bucket'),
 
 ## Simple Example
 
+**Note:** if you use windows, install the program 'gitBash' that emulate the command line, is you use mac ou linux "YOU IS HAPPY"
+
 Download this project by .zip, then unzip, and run in command line:
 
-Go to the directory wirh unziped files
+#### Go to the directory wirh unziped files
 ```
 $ cd uploader-go-bucket-master
 ```
-Run npm
+#### Run npm
 ```
 $ npm install
 ```
-Go to the directory 'public', and run node server
+#### Go to the directory 'public', and run node server
 ```
 $ cd public/ && node server
 ```
