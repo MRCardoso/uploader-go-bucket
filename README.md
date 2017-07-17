@@ -5,10 +5,14 @@
 $ npm install uploader-go-bucket
 ```
 
+## Require modules
+```javascript
+let uploader = require('uploader-go-bucket'),
+    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
+```
+
 ## Simple Example
 ```javascript
-let uploader = require('uploader-go-bucket');
-
 uploader
 .uploader({uploadDir: './public/upload/'}, req)
 .then(file=>{
@@ -44,9 +48,6 @@ The instance with the configuration of the bucket
 
 ```javascript
 // with help in the example above
-let uploader = require('uploader-go-bucket'),
-    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
-
 s3Helper
 .uploadObject(file, `myFirstTest/${file.name}`, file.path)
 .then(data=>{
@@ -60,9 +61,6 @@ s3Helper
 * **Keys:** Array of object with the keys path which will be deleted
 
 ```javascript
-let uploader = require('uploader-go-bucket'),
-    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
-    
 s3Helper
 .deleteObject([
     {Key: 'PARH_KEY_BUCKET'}
@@ -79,9 +77,6 @@ s3Helper
 * **Key:** the path of object in Bucket
 
 ```javascript
-let uploader = require('uploader-go-bucket'),
-    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
-    
 s3Helper
 .listObject('myFirstTest/')
 .then( data => {
@@ -96,9 +91,6 @@ s3Helper
 * **Keys:** array of object with the keys path which will be deleted
 
 ```javascript
-let uploader = require('uploader-go-bucket'),
-    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
-    
 s3Helper
 .getObject(`myFirstTest/${file.name}`)
 .then(item => {
