@@ -17,7 +17,7 @@ Download this project by .zip, then unzip, and run in command line:
 
 Go to the directory wirh unziped files
 ```
-cd uploader-go-bucket-master
+$ cd uploader-go-bucket-master
 ```
 Run npm
 ```
@@ -25,9 +25,11 @@ $ npm install
 ```
 Go to the directory 'public', and run node server
 ```
-cd public/ && node server
+$ cd public/ && node server
 ```
 
+
+# Module available methods
 
 
 ## uploader
