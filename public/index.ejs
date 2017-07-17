@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app>
+  <head>
+	  <title>
+	  	Teste de upload
+		</title>
+		<style>
+			.file-group-item{
+                background: #E9E9E9;
+                border: 1px solid #AFafaf;
+                padding: 10px 15px;
+                width: 28%;
+			}
+            .file-group-item input[type="submit"]{
+                background: #6E9FDD;
+                border: 1px solid #5E8FCD;
+                color: #f4F4F4;
+                padding: 4px 8px;
+                cursor: pointer
+            }
+            .file-group-item input[type="submit"]:hover{
+                background: #5E8FCD;
+                border: 1px solid #6E9FDD;
+            }
+            .alert-danger {
+                color: #a94442;
+                width: 28%;
+                padding: 10px 15px;
+                background-color: #f2dede;
+                border-color: #ebccd1;
+            }
+            .alert-success {
+                width: 28%;
+                padding: 10px 15px;
+                color: #3c763d;
+                background-color: #dff0d8;
+                border-color: #d6e9c6;
+            }
+		</style>
+  </head>
+  <body>
+        <% if (message.success!='') { %>
+            <div class="alert-success"><%= message.success %></div>
+        <% } %>
+        <% if (message.error!='') { %>
+            <div class="alert-danger"><%= message.error %></div>
+        <% } %>        
+        <form action="/upload" enctype="multipart/form-data" method="post">
+            <div class="file-group-item">
+                <input type="file" name="upload" required>
+                <input type="submit" value="Upload">
+            </div>
+        </form>
+  </body>
+</html>
