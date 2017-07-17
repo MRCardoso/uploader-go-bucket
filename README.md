@@ -66,6 +66,7 @@ The instance with the configuration of the bucket
 * **file:** The object of uploaded file
 * **pathName:** The name of the key to sent from s3
 * **newPathName:** The path of the local file to upload from bucket
+* **everDelete:** (default true) option to delete local file when is sent to bucket
 
 ```javascript
 // with help in the example above
