@@ -60,6 +60,9 @@ s3Helper
 * **Keys:** Array of object with the keys path which will be deleted
 
 ```javascript
+let uploader = require('uploader-go-bucket'),
+    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
+    
 s3Helper
 .deleteObject([
     {Key: 'PARH_KEY_BUCKET'}
@@ -76,6 +79,9 @@ s3Helper
 * **Key:** the path of object in Bucket
 
 ```javascript
+let uploader = require('uploader-go-bucket'),
+    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
+    
 s3Helper
 .listObject('myFirstTest/')
 .then( data => {
@@ -90,6 +96,9 @@ s3Helper
 * **Keys:** array of object with the keys path which will be deleted
 
 ```javascript
+let uploader = require('uploader-go-bucket'),
+    s3Helper = uploader.s3Helper({ bucket: 'YOUR_BUCKET_NAME' });
+    
 s3Helper
 .getObject(`myFirstTest/${file.name}`)
 .then(item => {
