@@ -25,7 +25,7 @@ $ cd uploader-go-bucket-master
 ```
 $ npm install
 ```
-#### Go to the directory 'public', and run node server
+#### Go to the 'public' directory, and run node server
 ```
 $ cd public/ && node server
 ```
