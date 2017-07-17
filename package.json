@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/MRCardoso/uploader-go-bucket#readme",
   "dependencies": {
+    "aws-sdk": "^2.85.0",
     "colors": "^1.1.2",
     "formidable": "^1.1.1",
     "fs": "0.0.1-security"
