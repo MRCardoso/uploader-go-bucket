@@ -12,6 +12,29 @@ let uploader = require('uploader-go-bucket'),
 ```
 
 ## Simple Example
+
+Download this project by .zip, then unzip, and run in command line:
+
+Go to the directory wirh unziped files
+```
+cd uploader-go-bucket-master
+```
+Run npm
+```
+$ npm install
+```
+Go to the directory 'public', and run node server
+```
+cd public/ && node server
+```
+
+
+
+## uploader
+* **params:** The configuration of own formidable module
+   	* **uploadDir:** (required) The path local when the file gona be stored
+* **req:** The 'request' of express module, to set in parse of formidable
+
 ```javascript
 uploader
 .uploader({uploadDir: './public/upload/'}, req)
@@ -22,12 +45,6 @@ uploader
     console.log(err);
 });
 ```
-
-## uploader
-* **params:** The configuration of own formidable module
-   	* **uploadDir:** (required) The path local when the file gona be stored
-* **req:** The 'request' of express module, to set in parse of formidable
-
 
 ## s3Helper
 The instance with the configuration of the bucket
