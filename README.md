@@ -31,7 +31,7 @@ $ cd public/ && node server
 ```
 
 
-# Module available methods
+# Available Methods
 
 
 ## uploader
@@ -53,7 +53,7 @@ uploader
 ## s3Helper
 The instance with the configuration of the bucket
 
-* **options:** (default {bucket:''}) The options of configuration for bucket, in the moment only set is bucket name
+* **options:** (default {bucket:''}) The options of configuration for bucket, only the bucket name in the moment
 
 ### s3Helper Methods
 * **uploadObject:** The method to uplaod file local from s3 Bucket
