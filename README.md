@@ -1,4 +1,4 @@
-# npm module uploader-go-bucket
+# Node Module uploader-go-bucket
 
 ## Installation
 ```
