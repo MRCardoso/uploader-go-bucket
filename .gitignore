@@ -1,5 +1,5 @@
 uploader-go-bucket.json
-create.sh
-publish.sh
+repo-create.sh
+npm-publish.sh
 node_modules/
 public/upload/
