@@ -80,6 +80,9 @@ s3Helper
 ```
 
 ## deleteObject
+
+Delete an Object from bucket s3, in the default bucket
+
 * **Keys:** Array of object with the keys path which will be deleted
 
 ```javascript
@@ -96,6 +99,9 @@ s3Helper
 })
 ```
 ## listObject
+
+List the Objects from bucket s3 by key informed in argument, in the default bucket
+
 * **Key:** the path of object in Bucket
 
 ```javascript
@@ -110,6 +116,9 @@ s3Helper
 ```
 
 ## getObject
+
+Get an Object from bucket s3, in the default bucket
+
 * **Keys:** array of object with the keys path which will be deleted
 
 ```javascript
@@ -124,6 +133,9 @@ s3Helper
 ```
 
 ## manageObject
+
+Method to manage the images in bucket s3, remove from bucket all imagens that not equal to the image param informed
+
 * **path:** the base path of the object in the bucket
 * **image:** The Object with current image data to be keep
 * **postImage:** The Object with image data sent in the request post
