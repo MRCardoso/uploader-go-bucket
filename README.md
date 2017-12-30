@@ -122,3 +122,30 @@ s3Helper
     console.log(err);
 });
 ```
+
+## manageObject
+* **path:** the base path of the object in the bucket
+* **image:** The Object with current image data to be keep
+* **postImage:** The Object with image data sent in the request post
+* **sessionImage:** The Object with image data store in the session
+
+```javascript
+s3Helper
+.manageObject(
+     `myFirstTest/${user._id}`, // the base path
+     {
+        "size": "(int) size of image", 
+        "path": "(string) new name", 
+        "name": "(string) original name", 
+        "type":"(string)image/png"
+     }, the cuttent imagen
+     null, // post data
+     null // session data
+)
+.then(promisses => {
+    // put here your business rule
+    console.log(promisses);
+}, errors => {
+    console.log(errors);
+});
+```
