@@ -1,6 +1,6 @@
 {
   "name": "uploader-go-bucket",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Upload local files, then sent file local from s3 bucket",
   "main": "index.js",
   "scripts": {
